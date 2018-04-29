@@ -22,7 +22,7 @@ export const authError = error => {
   };
 
 export const register = (email, username, password, confirmPassword, history) => dispatch => {
- 
+  
       axios
         .post('https://quiet-brushlands-69280.herokuapp.com/api/user/signup', { email, username, password })
         .then(res => {
